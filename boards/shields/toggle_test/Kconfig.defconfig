@@ -1,0 +1,6 @@
+if SHIELD_TOGGLE_TEST
+
+config ZMK_KEYBOARD_NAME
+    default "toggle-test"
+
+endif # SHIELD_TOGGLE_TEST
