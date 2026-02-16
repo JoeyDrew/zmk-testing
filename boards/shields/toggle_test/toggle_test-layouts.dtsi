@@ -8,10 +8,10 @@
 
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
-		columns = <2>;
+		columns = <5>;
 		rows = <1>;
 		map = <
-		    RC(0,0)  RC(0,1) 	
+		    RC(0,0)  RC(0,1) 	RC(0,2)   RC(0,3)   RC(0,4) 
 		>;
 	};
 
@@ -23,6 +23,9 @@
         input-gpios = 
             <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
 };
