@@ -10,15 +10,26 @@
     behaviors {
        
       macros {
-        zed_em_kay: zed_em_kay {
+        tog_1: tog_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_tap &kp T &kp O &kp G &kp 1>
                 , <&macro_release &kp LSHFT>
                 ;
         };
+
+        tog_2: tog_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp T &kp O &kp G &kp 2>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
     };
 
     keymap {
@@ -26,7 +37,10 @@
 
         default_layer {
             bindings = <
-               &zed_em_kay &zed_em_kay &zed_em_kay &zed_em_kay &zed_em_kay
+               &tog_1 &kp A 
+               &tog_1 &kp B 
+               &tog_2 &kp C
+               &tog_2 &kp D
             >;
         };
     };
