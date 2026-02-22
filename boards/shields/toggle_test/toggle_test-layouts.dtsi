@@ -17,7 +17,7 @@
             RC(1,0) RC(1,1)
         //   Key 5 | Key 6
             RC(2,0) RC(2,1)
-             Key 7 | Key 8
+        //   Key 7 | Key 8
             RC(3,0) RC(3,1)
         >;
     };
